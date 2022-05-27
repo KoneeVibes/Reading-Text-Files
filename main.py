@@ -13,12 +13,12 @@ def read_file_content(filename):
 
 def count_words():
     text = read_file_content(
-        "C:/Users/HP/.idle/Reading-Text-Files/story.txt").split()
+        "C:/Users/HP/.idle/Reading-Text-Files/story.txt")
     # [assignment] Add your code here
-
+    cleaned_text = text.split()
     wc = {}
 
-    for i in text:
+    for i in cleaned_text:
         if i in wc:
             wc[i] += 1
         else:
